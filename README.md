@@ -1,1 +1,1 @@
-# Demo-project to test features
+# Demo-project to test features for project demo
