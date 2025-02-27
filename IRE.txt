@@ -1,0 +1,89 @@
+IRE : 
+
+Roles and responsibilities:
+
+### IRE Appian Overview & Functionality - Summary
+
+**Purpose:**
+IRE Appian is an internal platform for the Investor Reporting team at FRB, designed to streamline monthly tasks such as generating investor reports, performing custodial account reconciliations, and maintaining a historical repository of these records. It aids in compliance with Reg AB.
+
+**Key Users:**
+Used exclusively by the Investor Reporting team at FRB, with no external customer access.
+
+**Core Functionality:**
+1. **Monthly Report Generation:**
+    - At the start of each month, generates reports and reconciliations based on month-end data.
+    - The team reviews and finalizes these reports.
+
+2. **Finalization & Download:**
+    - Completed reports and reconciliations are downloadable by the team.
+
+3. **Support for Business Growth and Policy:**
+    - Adapts to business growth and policy changes to maintain accurate investor reporting.
+
+**Application Components:**
+1. **Python ETL (Extract, Transform, Load):**
+    - Extracts data from EagleVision 2.0, processes it, and updates the Appian Lending Business database.
+  
+2. **COLD Fusion Report:**
+    - Provides key investor details for the Python ETL process.
+
+3. **Applan Workflow:**
+    - Generates remittance reports and PI/TI (Principal and Interest/Total Interest) reports.
+
+**Flow Summary:**
+1. **Data Input:**
+    - Data from the COLD Fusion report and Seeburger job is input to the Python ETL process.
+2. **ETL Process:**
+    - Python ETL updates the database with data from EagleVision 2.0.
+3. **Report Generation:**
+    - Applan Workflow generates necessary reports.
+4. **Review & Finalization:**
+    - Investor Reporting team reviews, adjusts, and finalizes reports for download.
+
+This systematic approach ensures efficient and compliant investor reporting and reconciliations each month.
+
+Roles and Responsibilities:
+
+Monitoring and Maintaining Python ETLs responsible for loading data from Snowflake views to SQL DB
+Extraction and Verification of most recent business transactions from SQL DB 
+Continuous refactoring of Stored Procedures to implement new business logics
+Optimizing the SQl queries for faster response time 
+Discussing and implementing new business requirement with Business and implementing Logics 
+Monitoring of Control M and Seaburger jobs in case of failure in Production
+Validation of Appian generated reports with SQL data loads in Production and Non Production Environments 
+
+
+CLS 
+
+### Commercial Loan Servicing (CLS) Application Overview
+
+**Purpose:**
+- The CLS application at First Republic Bank (FRB) supports quality assurance and defect tracking for lending products, ensuring smooth loan processing and tracking errors.
+
+**Key Components:**
+1. **Data Acquisition:**
+   - Gathers data from multiple loan origination systems.
+2. **Workflow:**
+   - Processes data to provide insights on SLA performance and employee effectiveness.
+3. **Management Reporting:**
+   - Generates reports on SLA performance and operational efficiency.
+
+**Functionality:**
+- Manages commercial loan closing tasks, error tracking, and document creation/remediation.
+- Supports residential loan processing and quality reviews by an offshore team.
+
+**Purpose for FRB:**
+- Ensures accurate and efficient loan processing, error tracking, and comprehensive management reporting.
+
+Roles and Responsibilities:
+
+Created CLS Automation framework to fasten the process of regression testing
+Maintaining CLS Automation framework for new development and process 
+Monitoring Appian Schedulers which extract load from multiple loan origination systems in SQL DB and create request in Appian CLS 
+Extract SQL report and perform cross validation of data in Production and Non Production Environments
+
+
+LMS 
+
+
